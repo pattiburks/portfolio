@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Brookhaven Web Design and Development - Contact Us</title>
+		<link rel="shortcut icon" href="favicon.ico" />
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+		<link rel="stylesheet" href="labgstyles.css">
+		<style>
+			#contactForm {
+				width: 70%;
+				float: right;
+				padding-right: 3em;
+				margin: -1em 0 1em 3em;
+			}
+			#maps {
+				margin-top: 2em;
+				line-height: 1.5em;
+			}
+			fieldset {
+				border: thin solid gray;
+				border-radius: 15px;
+				background: #006400; /* Old browsers */
+background: -moz-linear-gradient(top,  #006400 0%, #8fbc8f 34%, #8fbc8f 66%, #006400 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#006400), color-stop(34%,#8fbc8f), color-stop(66%,#8fbc8f), color-stop(100%,#006400)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #006400 0%,#8fbc8f 34%,#8fbc8f 66%,#006400 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #006400 0%,#8fbc8f 34%,#8fbc8f 66%,#006400 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #006400 0%,#8fbc8f 34%,#8fbc8f 66%,#006400 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #006400 0%,#8fbc8f 34%,#8fbc8f 66%,#006400 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#006400', endColorstr='#006400',GradientType=0 ); /* IE6-9 */
+}
+			legend {
+				font-weight: bold;
+				color: darkgoldenrod;
+				padding-bottom: 1.5em;
+			}
+			legend:first-letter {
+				font-size: 1.25em;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="content">
+			<header>
+				<hgroup>
+					<h1>Brookhaven College Web Design and Development Program</h1>
+					<h2>Contact Us</h2>
+				</hgroup>
+			</header>
+			<nav>
+				<a href="labgindex.html">Home</a> <a href="labgdegrees.html">Degrees &amp; Certificates</a> <a href="labgcourses.html">Courses</a> <a href="labgfaculty.html">Faculty</a> <a href="labgaq.html">FAQs</a> <a href="labgcontact.html">Contact Us</a>
+			</nav>
+			<section id="contactForm">
+				<h3>Contact Form</h3>
+				<form method="post" action="mailto:pburks@dcccd.edu">
+					<fieldset>
+						<legend>
+							Your contact information
+						</legend>
+						<p>
+							<label>Name:
+								<input type="text" name="contactName" id="contactName" placeholder="Please enter full name" required autofocus>
+							</label>
+							<br>
+							<label>Email:
+								<input type="email" name="contactEmail" id="contactEmail" required placeholder="Valid email is required">
+							</label>
+							<br>
+							<label>Phone:
+								<input type="text" name="contactPhone" id="contactPhone">
+							</label>
+							<br>
+							Please contact me by: <label>
+								<input type="radio" id="contactbyEmail" name="contactBy" value="email" checked="checked">
+								Email</label><label>
+								<input type="radio" id="contactbyPhone" name="contactBy" value="phone">
+								Phone</label><label>
+								<input type="radio" id="contactbyText" name="contactBy" value="text">
+								Text</label>
+							<br>
+							<label>
+								<input type="checkbox" name="student" id="student" value="yes">
+								I am currently a Brookhaven student</label>
+
+						</p>
+					</fieldset>
+					<br>
+					<fieldset>
+						<legend>
+							Contact purpose
+						</legend>
+						<p>
+							<label>Reason for contact:
+								<select name="reason" id="reason">
+									<option value="">Please select one:</option>
+									<option value="info">I am seeking information about the program</option>
+									<option value="appt">I would like to set up an appointment with a faculty advisor</option>
+									<option value="sched">I would like information about the course schedule</option>
+									<option value="prob">I have a problem or issue that needs to be resolved</option>
+									<option value="other">Other</option>
+								</select></label>
+						</p>
+						<p>
+							<label>Please tell us how we can help you:
+								<br>
+							</label>
+							<textarea cols="80" rows="5"></textarea>
+</p>						<p>
+							<label>Would you like to attach a file?
+								<input type="file" name="contactFile" id="contactFile">
+							</label>
+						</p>
+						<p>
+						<input type="submit" value="Send">
+					</p>
+					</fieldset>
+				</form>
+			</section>
+			<section>
+				<blockquote>
+					<h3>Faculty Advisor</h3>
+					<p><strong>Professor Patti Burks</strong>
+						<br>
+						<a href="mailto:pburks@dcccd.edu">pburks@dcccd.edu</a>
+						<br>
+						972.860.4329
+						<br>
+						Office: K104 on the Brookhaven Campus
+					</p>
+				</blockquote>
+			</section>
+			
+			<section id="maps">
+				
+				<blockquote>
+					<p><strong>Brookhaven College</strong><br>
+						3939 Valley View Lane<br>
+						Farmers Branch, TX 75244	
+					</p>
+					<p>
+						
+						<a href="brookhaven_areamap.jpg" target="_blank">
+							<img src="brookhaven_areamap_small.gif" alt="Map to Brookhaven" height="64" width="130">
+							<br>Map to Brookhaven College</a>
+					</p>
+					<p>
+						<a href="WelcomeMap_May13.jpg" target="_blank">
+							<img src="brookhaven2D_small.gif" alt="Brookhaven Campus Map" height="64" width="130">
+							<br>Campus Map</a>
+					</p>
+				</blockquote>
+			</section>
+
+			<footer>
+				<p>
+					<sup>&copy;</sup>Copyright 2013 by Brookhaven College - Computer Information Technology
+				</p>
+			</footer>
+		</div>
+	</body>
+</html>
