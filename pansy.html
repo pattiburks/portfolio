@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>JavaScript Form Validation</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0">
+		<link href="js.css" rel="stylesheet">
+		<style>
+		body {
+		    background-color: #8fbc8f;
+		}
+			#lgImg {
+				float: left;
+				margin: 0 1em 1em;
+				padding: 0 1em;
+			}
+			table {
+				width: 80%;
+				margin: 0 auto;
+			}
+			#details {
+				clear: left
+			}
+			#gallery {
+			    clear: left;
+			}
+			#gallery figure {
+			    float: left;
+			    padding: 1em;
+			    margin: 1em;
+			}
+			figcaption {
+			    color: darkgreen;
+			    font-weight: bold;
+			}
+			hr {
+			    clear: left;
+			}
+		    .rating {
+		        display: inline-block;
+		        float: right;
+		    }
+		    .add {
+		        padding: .15em .5em;
+		        display: block;
+		        width: 6em;
+		        text-align: center;
+		        margin: 0 auto;
+		        background-color: cornsilk;
+		        border: medium double #8fbc8f;
+		        border-radius: 15px;
+		        box-shadow: 5px 5px 5px gray;
+		        color: darkgreen;
+		        font-weight: bold;
+		    }
+		    .del {
+		        padding: .1em .5em;
+                text-align: center;
+                margin: 0 auto;
+                background-color: cornsilk;
+                border: thin solid #8fbc8f;
+                border-radius: 15px;
+                color: darkgreen;
+                font-size: .75em;
+		    }
+		    .wrapper {
+		        border: thin #8fbc8f solid;
+		        background-color: cornsilk;
+		        border-radius: 15px;
+		        padding: .5em 1em;
+		        text-align: center;
+		    }
+		    #cart li {
+                display: inline-block;
+                width: 40%;
+                padding: 0 1em;
+                list-style-type: none;
+            }
+		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<script src="project2.js"></script>
+		
+	</head>
+	<body>
+		<div id="container">
+			<header>
+				<h1>Patti's Posies</h1>
+			</header>
+			<nav><p><a href="index.html">Home</a> | <a href="orderform.html">Place an Order</a> | <a href="mums.html">Mums</a> | <a href="pansy.html">Pansies</a></p></nav>
+			<div>
+				<h2 id="pltTitle">Pansies</h2>
+					<div id="desc">
+						<h3>Enjoy happy and fragrant faces in your fall garden! </h3>
+						<p><figure id="lgImg"><img src="pansy2.jpg" alt="Multicolored pansies" width="322" height="380" ><figcaption>Multicolored Pansies<span class="rating"><img src="staroff.gif"> <img src="staroff.gif"> <img src="staroff.gif"> <img src="staroff.gif"> <img src="staroff.gif"> </span></figcaption><br><span class="add">Add to Cart</span></figure></p>
+						<p> These colorful flowers bloom in winter when the rest of your landscape is brown and dull.</p>
+						<p>Pansies come in a full range of colors from pastels to primary tones. Some varieties are trailing and work well in hanging baskets and containers.</p>
+						<p>Pansy blooms are edible so add some to your kitchen garden for delicious and beautiful salads!</p>
+						<p>Pansies are excellent companion plants for spring flowering bulbs like tulips and daffodils.</p>
+					</div>
+					
+				<div id="gallery">
+					
+						<figure><img src="pansy1.jpg" alt="Rose pansy" width="322" height="380"><figcaption>Rose Pansy<span class="rating"><img src="staroff.gif"> <img src="staroff.gif"> <img src="staroff.gif"> <img src="staroff.gif"> <img src="staroff.gif"> </span></figcaption><br><span class="add">Add to Cart</span></figure>
+						 <figure><img src="pansy3.jpg" alt="Yellow Dark Face Pansy" width="322" height="380"><figcaption>Yellow Dark Face Pansy<span class="rating"><img src="staroff.gif"> <img src="staroff.gif"> <img src="staroff.gif"> <img src="staroff.gif"> <img src="staroff.gif"> </span></figcaption><br><span class="add">Add to Cart</span></figure>
+						<figure><img src="pansy4.jpg" alt="Ruffled pansy mix" width="322" height="380"><figcaption>Ruffled Pansy Mix<span class="rating"><img src="staroff.gif"> <img src="staroff.gif"> <img src="staroff.gif"> <img src="staroff.gif"> <img src="staroff.gif"> </span></figcaption><br><span class="add">Add to Cart</span></figure>
+						 <figure><img src="pansy5.jpg" alt="Pastel pansy mix" width="322" height="380"><figcaption>Pastel Pansy Mix<span class="rating"><img src="staroff.gif"> <img src="staroff.gif"> <img src="staroff.gif"> <img src="staroff.gif"> <img src="staroff.gif"> </span></figcaption><br><span class="add">Add to Cart</span></figure>
+				</div>
+				<hr>
+				<div>
+				    <h3>Shopping Cart</h3>
+				    <ul id="cart"></ul>
+				        <div class="wrapper"><p id="empty">Your shopping cart is empty</p></div>
+				</div>
+			<hr>
+			<footer>
+				<p><small id="copy">&copy; Copyright  by Patti Burks </small></p>
+			</footer>
+		</div>
+	</body>
+</html>
